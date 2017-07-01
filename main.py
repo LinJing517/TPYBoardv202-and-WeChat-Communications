@@ -16,7 +16,7 @@ class AlarmSystem:
     def push(self, result):
         title = "TPYBoardv202提示您:注意天气变化保持健康心情"
         content = 'text='+title+'&'+'desp='+result
-        url="https://sc.ftqq.com/SCU9637T6aabf569b1eb496b4e431ef1802b09b9595453afe292c.send?%s" % content
+        url="https://sc.ftqq.com/xxx(你申请的密钥).send?%s" % content
         r = urequests.get(url)
         r.close()
 p2=Pin(2,Pin.OUT)
